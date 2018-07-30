@@ -32,7 +32,7 @@ class AlunosController extends AppController
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view($id = null) // delete pelo ID
     {
         $aluno = $this->Alunos->get($id, [
             'contain' => []
